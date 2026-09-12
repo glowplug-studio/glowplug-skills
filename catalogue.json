@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": [
+    {
+      "id": "general/changelog",
+      "name": "changelog",
+      "description": "Write curated release notes for the intended audience, using Git evidence and the repository changelog policy."
+    }
+  ]
+}
