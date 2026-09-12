@@ -5,7 +5,8 @@ Free, public, Apache-2.0-licensed agent skills for Supacharger, Specdrive and ot
 ## Catalogue
 
 - `general/changelog`: curated, evidence-based release notes; adapted from the Specdrive changelog skill without its application-specific output contract.
-- `specdrive/`: reserved for future Specdrive skills.
+- `general/handhold-me`: feature proposals, implementation checklists, and guided delivery without a prescribed technology stack.
+- `specdrive/specdrive-handhold-me`: Specdrive feature proposals and guided delivery with project-specific safeguards.
 - `supacharger/`: reserved for future Supacharger skills.
 
 Each skill lives at `<category>/<skill-name>/SKILL.md` with YAML `name` and `description`. The name matches the directory. Supporting `references/`, `scripts/` and `assets/` belong inside that skill only when needed. Register installable skills in `catalogue.json`; identifiers are category/name pairs and destination names must be unique across the catalogue. Keep public descriptions concise and plain text.

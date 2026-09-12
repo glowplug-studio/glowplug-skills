@@ -5,6 +5,16 @@
       "id": "general/changelog",
       "name": "changelog",
       "description": "Write curated release notes for the intended audience, using Git evidence and the repository changelog policy."
+    },
+    {
+      "id": "general/handhold-me",
+      "name": "handhold-me",
+      "description": "Turn feature discussions into proposal checklists and implementation flows, then guide authorised delivery one checkpoint at a time."
+    },
+    {
+      "id": "specdrive/specdrive-handhold-me",
+      "name": "specdrive-handhold-me",
+      "description": "Plan large Specdrive features and guide checkpoint delivery while preserving project safeguards and decisions."
     }
   ]
 }

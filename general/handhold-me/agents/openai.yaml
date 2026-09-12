@@ -1,0 +1,4 @@
+interface:
+  display_name: "Handhold Me"
+  short_description: "Feature proposals and guided checkpoint delivery"
+  default_prompt: "Use $handhold-me to turn our feature discussion into a proposal checklist and implementation flow, then guide authorised delivery."
