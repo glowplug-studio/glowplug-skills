@@ -4,7 +4,7 @@ Free, public, Apache-2.0-licensed agent skills for Supacharger, Specdrive and ot
 
 ## Catalogue
 
-- `general/changelog`: curated, evidence-based release notes; adapted from the Specdrive changelog skill without its application-specific output contract.
+- `general/changelog`: curated, evidence-based release notes.
 - `general/handhold-me`: feature proposals, implementation checklists, and guided delivery without a prescribed technology stack.
 - `specdrive/specdrive-handhold-me`: Specdrive feature proposals and guided delivery with project-specific safeguards.
 - `supacharger/`: reserved for future Supacharger skills.
