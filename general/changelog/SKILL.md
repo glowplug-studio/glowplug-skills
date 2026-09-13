@@ -27,7 +27,15 @@ If no checkpoint exists, use the latest entry date as a discovery boundary and v
 
 ## Preserve the output contract
 
-Use the repository's required format. For Keep a Changelog 1.1.0, retain `[Unreleased]`, use relevant `Added`, `Changed`, `Deprecated`, `Removed`, `Fixed` and `Security` headings, omit empty categories, and order released versions newest first with `YYYY-MM-DD` dates. Add real version/compare links; do not invent tags or release a version merely to record a commit. See https://keepachangelog.com/en/1.1.0/.
+Use the repository's required format. The following procedure incorporates [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/); the link is attribution, not a prerequisite fetch.
+
+- Write a portable Markdown record for people, grouping notable outcomes rather than copying commits.
+- Keep `## [Unreleased]` first. For each actual release, use `## [version] - YYYY-MM-DD`, newest first, with a working release or comparison link. State whether the project follows Semantic Versioning.
+- Group new capabilities under `Added`, behaviour changes under `Changed`, planned withdrawals under `Deprecated`, withdrawn capabilities under `Removed`, bug corrections under `Fixed`, and vulnerability remedies under `Security`. Omit empty groups.
+- Make breaking changes and deprecations explicit, including the upgrade action. Cover important changes consistently.
+- When releasing, move the relevant unreleased entries into the released section; do not invent a release for a routine commit.
+- Retain withdrawn releases, marking their headings `[YANKED]` and explaining why. Correct factual omissions transparently without inventing historical events.
+- Do not substitute a generated Git log or hosted release page for the repository's changelog.
 
 For other formats, preserve their schema and ordering. Validate the result. Review every required commit without inventing an entry for changes that are not notable.
 
