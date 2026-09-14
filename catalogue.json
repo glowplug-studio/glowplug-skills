@@ -15,6 +15,11 @@
       "id": "specdrive/specdrive-handhold-me",
       "name": "specdrive-handhold-me",
       "description": "Plan large Specdrive features and guide checkpoint delivery while preserving project safeguards and decisions."
+    },
+    {
+      "id": "supacharger/core-upgrade-review",
+      "name": "core-upgrade-review",
+      "description": "Compare a Supacharger consumer with a proposed Core revision and report evidenced compatibility, migration and deployment risks before updating."
     }
   ]
 }
