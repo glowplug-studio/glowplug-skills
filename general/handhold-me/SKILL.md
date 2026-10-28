@@ -80,13 +80,19 @@ For each checkpoint:
 7. Update the playbook immediately with the result and evidence.
 8. Make a logical, narrowly scoped commit when the repository reaches a stable
    checkpoint and the human has authorised commits.
-9. End with the next single action or the exact proof the human should perform.
-   While the guided task remains open, apply this to clarification,
-   acknowledgement and tangent replies too: end with the next bounded action
-   or pending decision, rather than a completion acknowledgement alone. Make
-   the handoff self-contained so the human can return later and continue
-   without reconstructing the conversation. Respect an explicit pause or stop;
-   do not treat a handoff as permission to advance dependent work.
+9. At each handoff while the guided task remains open, name the next bounded
+   step and ask an explicit question inviting the human to continue or amend
+   the completed work. For example: “Next is [specific step]. Are you ready to
+   continue, or is there anything you want to add or change about this step?”
+   Merely stating “Next: …” or “I’ll …” is not a prompt. Apply this to
+   clarification, acknowledgement and tangent replies too. If a concrete
+   decision or verification result is needed, ask for that instead of adding
+   a second generic readiness question. Make the handoff self-contained so
+   the human can return later without reconstructing the conversation.
+   Wait for their reply at the handoff; do not treat the question as permission
+   to advance dependent work. Respect an explicit pause or stop without
+   prompting them to resume. Do not insert readiness gates between routine
+   actions within an already authorised checkpoint.
 
 Do not claim that configuration is correct merely because a command exited
 successfully. Check the resulting state when a read-only verification exists.
