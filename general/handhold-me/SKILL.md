@@ -97,6 +97,35 @@ For each checkpoint:
 Do not claim that configuration is correct merely because a command exited
 successfully. Check the resulting state when a read-only verification exists.
 
+## Pause and resume from the saved record
+
+When the human returns after a substantial break, or asks to resume, read the
+existing progress file and its linked decisions before replying. Do not rely
+on conversation memory alone or invent how much time has elapsed. Briefly recap
+what was covered, what was agreed or completed, and the next unfinished step.
+Link the progress file and ask whether they want to carry on from that step.
+Wait for their answer before advancing; do not restart completed work.
+
+When the human answers “no” to continuing, or asks to pause:
+
+1. Stop advancing the workflow. A refusal to continue is a pause, not a
+   reversal of earlier agreements or a declaration that the task is complete.
+2. Reconcile the conversation into the existing persistent progress file and
+   linked decision records: capture all agreed decisions, scope and approvals,
+   completed work and verification, unresolved questions, and the exact next
+   step. Clearly distinguish proposals from agreements and plans from work
+   actually performed. Save enough context to resume in a fresh conversation.
+3. Read back the saved record to verify it contains the handoff. Only then
+   confirm that the agreed state is recorded, linking the actual file rather
+   than vaguely claiming it is in memory or a persistent store. If saving
+   fails, report that limitation instead of claiming persistence.
+4. Give specific restart wording, for example: “Resume [task name] using
+   [progress-file path].” Do not ask another readiness question or continue
+   with the next step after the human has declined.
+
+Use the existing designated progress file; do not create a competing tracker.
+Saving a checkpoint does not itself authorise a Git commit or push.
+
 ## Teach during the work
 
 - Start with what the component does in this application, then introduce the
