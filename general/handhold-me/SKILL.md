@@ -81,6 +81,12 @@ For each checkpoint:
 8. Make a logical, narrowly scoped commit when the repository reaches a stable
    checkpoint and the human has authorised commits.
 9. End with the next single action or the exact proof the human should perform.
+   While the guided task remains open, apply this to clarification,
+   acknowledgement and tangent replies too: end with the next bounded action
+   or pending decision, rather than a completion acknowledgement alone. Make
+   the handoff self-contained so the human can return later and continue
+   without reconstructing the conversation. Respect an explicit pause or stop;
+   do not treat a handoff as permission to advance dependent work.
 
 Do not claim that configuration is correct merely because a command exited
 successfully. Check the resulting state when a read-only verification exists.
