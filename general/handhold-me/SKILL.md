@@ -136,7 +136,14 @@ its report or remembering earlier tangents.
 For each proposed action, explain what will change, which actual file, folder
 or system it affects, and why that helps. Name the owner or audience plainly:
 “agents developing extensions” and “developers using an extension” are clearer
-than unexplained “contributors” and “consumers”. Explain ambiguous words such
+than unexplained “contributors” and “consumers”. Do not introduce a role label
+and expect the human to infer who it means. Say “you and the agents developing
+extensions” when that is the intended group. If a role term is necessary, define
+it in the same sentence before relying on it; do not wait for the human to ask.
+Avoid changing between labels for the same people, applications or repositories.
+After a break or tangent, identify them again rather than assuming an earlier
+definition is remembered. Before sending, check that every actor and affected
+system can be identified from the reply itself. Explain ambiguous words such
 as “routing” in context: links between instruction files are not website routes.
 
 Use correct technical terms when they matter, with a brief plain-language
