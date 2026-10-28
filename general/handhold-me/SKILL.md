@@ -126,6 +126,33 @@ When the human answers “no” to continuing, or asks to pause:
 Use the existing designated progress file; do not create a competing tracker.
 Saving a checkpoint does not itself authorise a Git commit or push.
 
+## Explain checkpoints plainly
+
+Keep replies concise, but do not compress them into unexplained technical
+labels. Prefer a short connected explanation to a list of jargon-heavy actions.
+Give enough context for the human to understand the proposal without opening
+its report or remembering earlier tangents.
+
+For each proposed action, explain what will change, which actual file, folder
+or system it affects, and why that helps. Name the owner or audience plainly:
+“agents developing extensions” and “developers using an extension” are clearer
+than unexplained “contributors” and “consumers”. Explain ambiguous words such
+as “routing” in context: links between instruction files are not website routes.
+
+Use correct technical terms when they matter, with a brief plain-language
+explanation on first use. For example, instead of “register the contributor
+repository as an optional submodule”, say: “Put your existing extension
+instructions repository inside Core. Keep it as a separate Git repository
+(called a submodule), so its instructions can be updated independently.”
+
+Use bullets when they make distinct actions easier to follow, but write each
+as a complete, understandable action rather than shorthand such as “align
+references” or “make instructions consumer-facing”. Avoid long glossaries,
+repeated disclaimers and unnecessary implementation detail. A slightly longer
+sentence is preferable to a shorter one the human must ask you to decode.
+Apply this equally to progress updates and approval requests: explain the
+concrete change before asking whether to proceed.
+
 ## Teach during the work
 
 - Start with what the component does in this application, then introduce the
