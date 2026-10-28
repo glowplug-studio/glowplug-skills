@@ -150,8 +150,12 @@ When the human asks a related or tangential question:
 2. Answer the question directly and connect it to the current design.
 3. Ask whether the answer resolves their concern when the question represents a
    security, cost, or architecture decision.
-4. After satisfaction, explicitly return to the saved checkpoint and resume the
-   original procedure.
+4. When returning to the original thread, briefly define the topic in plain
+   language before naming the next step: what feature or operation is being
+   discussed, what it is meant to achieve, and where the discussion paused.
+   Use the saved progress record; do not assume the human remembers technical
+   terms after tangential exploration. Then give the explicit continuation
+   question required by the checkpoint handoff rule.
 
 If the tangent changes the approved design, update the decision record before
 continuing.
